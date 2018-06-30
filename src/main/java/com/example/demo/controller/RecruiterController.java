@@ -52,46 +52,4 @@ public class RecruiterController {
 		
 	}
 	
-/*	
-	@RequestMapping("/create")
-	public String createEntry() {
-		return "create";
-	}
-	
-	@RequestMapping(value="/messageCreate", method=RequestMethod.POST)
-	public ModelAndView createdDisplay(@ModelAttribute User u) {
-		
-		ModelAndView mav=new ModelAndView();
-		String message;
-		int rs= us.create(u);
-		if(rs==1) {
-			message="Created successfully";
-		}
-		else
-			message="Couldn't create";
-		
-		mav.addObject("string",message);
-		mav.setViewName("messageDisplay");
-		return mav;
-	}
-	
-	@RequestMapping("/delete")
-	public String delete() {
-		return "delete";
-	}
-	
-	@RequestMapping(value="/deleteEntry", method=RequestMethod.POST)
-	public ModelAndView deleteEntry(@ModelAttribute User u) {
-		ModelAndView mav=new ModelAndView();
-		int rs=us.delete(u);
-		String m;
-		if(rs==1)
-			m="Deleted Successfully";
-		else
-			m="not deleted";
-		mav.addObject(m);
-		mav.setViewName("messageDisplay");
-		return mav;
-	}
-	*/
 }
